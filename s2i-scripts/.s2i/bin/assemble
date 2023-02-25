@@ -7,9 +7,11 @@ source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 echo "---> Enabling s2i support in httpd24 image"
 
 config_s2i
-
+cp -af /tmp/src/. ./
 ######## CUSTOMIZATION STARTS HERE ############
-
+DATE=`date "+%F"`
+echo "new string" > ./info.html
+echo " application created on $DATE" >> ./info.html
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
