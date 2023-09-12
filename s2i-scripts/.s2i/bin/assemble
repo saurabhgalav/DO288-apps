@@ -12,6 +12,7 @@ cp -af /tmp/src/. ./
 DATE=`date "+%F"`
 echo "some string" > ./info.html
 echo "application created on $DATE" >> ./info.html
+echo "Welcome to MY OWN Custom S2i Script"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
